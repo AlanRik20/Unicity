@@ -1,6 +1,6 @@
-import './styles/style.css';
-import { LoginPage } from './pages/login';
-import { RegisterPage } from './pages/register';
+import "./styles/style.css";
+import { LoginPage } from "./pages/login";
+import { RegisterPage } from "./pages/register";
 
 document.addEventListener("DOMContentLoaded", () => {
   const pathname = window.location.pathname;

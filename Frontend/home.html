@@ -16,7 +16,7 @@
       }
     </style>
   </head>
-  <body class="bg-cyan-100 font-sans">
+  <body class="bg-cyan-100 font-sans flex flex-col min-h-screen">
     <!-- Barra de navegación -->
     <header
       class="flex justify-between items-center p-5 bg-gradient-to-r from-blue-400 to-blue-500 text-white"
@@ -51,62 +51,81 @@
       </div>
     </header>
 
-    <section class="flex flex-wrap justify-around my-10">
-      <!-- Tarjetas de servicios (igual que en el ejemplo anterior) -->
-      <!-- Tarjeta 1 -->
-      <div
-        class="bg-white rounded-lg shadow-lg w-72 m-5 text-center p-5 transition-transform transform hover:-translate-y-2 hover:shadow-xl"
-      >
-        <img
-          src="carpintero.jfif"
-          alt="Profile 1"
-          class="w-full rounded-full mb-4"
-        />
-        <h3 class="text-xl text-gray-800 mb-2">John Doe</h3>
-        <p class="text-gray-600 mb-4">Carpintero</p>
-        <button
-          class="bg-blue-500 text-white py-2 px-4 rounded-full transition-colors duration-300 hover:bg-blue-400"
+    <!-- Contenido principal -->
+    <main class="flex-grow">
+      <section class="flex flex-wrap justify-around my-10">
+        <!-- Tarjetas de servicios -->
+        <!-- Tarjeta 1 -->
+        <div
+          class="bg-white rounded-lg shadow-lg w-72 m-5 text-center p-5 transition-transform transform hover:-translate-y-2 hover:shadow-xl"
         >
-          Contactar
-        </button>
-      </div>
+          <img
+            src="carpintero.jfif"
+            alt="Profile 1"
+            class="w-full rounded-full mb-4"
+          />
+          <h3 class="text-xl text-gray-800 mb-2">John Doe</h3>
+          <p class="text-gray-600 mb-4">Carpintero</p>
+          <button
+            class="bg-blue-500 text-white py-2 px-4 rounded-full transition-colors duration-300 hover:bg-blue-400"
+          >
+            Contactar
+          </button>
+        </div>
 
-      <!-- Tarjeta 2 -->
-      <div
-        class="bg-white rounded-lg shadow-lg w-72 m-5 text-center p-5 transition-transform transform hover:-translate-y-2 hover:shadow-xl"
-      >
-        <img
-          src="electricista.jfif"
-          alt="Profile 2"
-          class="w-full rounded-full mb-4"
-        />
-        <h3 class="text-xl text-gray-800 mb-2">Jane Smith</h3>
-        <p class="text-gray-600 mb-4">Electricista</p>
-        <button
-          class="bg-blue-500 text-white py-2 px-4 rounded-full transition-colors duration-300 hover:bg-blue-400"
+        <!-- Tarjeta 2 -->
+        <div
+          class="bg-white rounded-lg shadow-lg w-72 m-5 text-center p-5 transition-transform transform hover:-translate-y-2 hover:shadow-xl"
         >
-          Contactar
-        </button>
-      </div>
+          <img
+            src="electricista.jfif"
+            alt="Profile 2"
+            class="w-full rounded-full mb-4"
+          />
+          <h3 class="text-xl text-gray-800 mb-2">Jane Smith</h3>
+          <p class="text-gray-600 mb-4">Electricista</p>
+          <button
+            class="bg-blue-500 text-white py-2 px-4 rounded-full transition-colors duration-300 hover:bg-blue-400"
+          >
+            Contactar
+          </button>
+        </div>
 
-      <!-- Tarjeta 3 -->
-      <div
-        class="bg-white rounded-lg shadow-lg w-72 m-5 text-center p-5 transition-transform transform hover:-translate-y-2 hover:shadow-xl"
-      >
-        <img
-          src="jardinero.jfif"
-          alt="Profile 3"
-          class="w-full rounded-full mb-4"
-        />
-        <h3 class="text-xl text-gray-800 mb-2">Michael Lee</h3>
-        <p class="text-gray-600 mb-4">Jardinero</p>
-        <button
-          class="bg-blue-500 text-white py-2 px-4 rounded-full transition-colors duration-300 hover:bg-blue-400"
+        <!-- Tarjeta 3 -->
+        <div
+          class="bg-white rounded-lg shadow-lg w-72 m-5 text-center p-5 transition-transform transform hover:-translate-y-2 hover:shadow-xl"
         >
-          Contactar
-        </button>
+          <img
+            src="jardinero.jfif"
+            alt="Profile 3"
+            class="w-full rounded-full mb-4"
+          />
+          <h3 class="text-xl text-gray-800 mb-2">Michael Lee</h3>
+          <p class="text-gray-600 mb-4">Jardinero</p>
+          <button
+            class="bg-blue-500 text-white py-2 px-4 rounded-full transition-colors duration-300 hover:bg-blue-400"
+          >
+            Contactar
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-500 text-white py-4">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2024 Unicity. Todos los derechos reservados.</p>
+        <p>
+          <a href="#" class="text-white hover:underline"
+            >Política de privacidad</a
+          >
+          |
+          <a href="#" class="text-white hover:underline"
+            >Términos de servicio</a
+          >
+        </p>
       </div>
-    </section>
+    </footer>
 
     <script src="./src/newMain.js"></script>
   </body>
